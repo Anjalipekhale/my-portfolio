@@ -75,7 +75,7 @@ function GitHubStats() {
         {/* GitHub Link */}
         <div style={{ textAlign: "center", marginTop: "1rem" }}>
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/Anjalipekhale"
             target="_blank"
             rel="noopener noreferrer"
             style={{
