@@ -31,15 +31,10 @@ function Contact() {
     email: formData.email,
     message: formData.message
   };
-    emailjs
-    .send(
+    emailjs.send(
     "service_7l7lzwb",
     "template_90ohzig",
-    {
-      name: formData.name,
-      email: formData.email,
-      message: formData.message
-    },
+    templateParams,
     "xvpWL7cn6VxidqPHi"
   )
       .then(
@@ -248,8 +243,9 @@ function Contact() {
         <div style={{marginTop: "3rem", textAlign: "center"}}>
           <h3>Contact Information</h3>
           <p>📧 Email: <a href="mailto:yourmail@gmail.com">anjalipekhale2@gmail.com</a></p>
-          <p>🔗 LinkedIn: <a href="#" target="_blank" rel="noopener noreferrer">www.linkedin.com/in/anjali-pekhale-5342 </a></p>
-          <p>🐙 GitHub: <a href="#" target="_blank" rel="noopener noreferrer">https://github.com/Anjalipekhale</a></p>
+          <a href="https://www.linkedin.com/in/anjali-pekhale-5342" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+
+          <a href="https://github.com/Anjalipekhale" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
       </div>
     </section>
