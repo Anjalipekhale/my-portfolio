@@ -243,9 +243,9 @@ function Contact() {
         <div style={{marginTop: "3rem", textAlign: "center"}}>
           <h3>Contact Information</h3>
           <p>📧 Email: <a href="mailto:yourmail@gmail.com">anjalipekhale2@gmail.com</a></p>
-          <a href="https://www.linkedin.com/in/anjali-pekhale-5342" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-
-          <a href="https://github.com/Anjalipekhale" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <p>📇 <a href="https://www.linkedin.com/in/anjali-pekhale-5342" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+          <p>🐙 <a href="https://github.com/Anjalipekhale" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+          
         </div>
       </div>
     </section>
