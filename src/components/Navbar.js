@@ -19,8 +19,8 @@
 // }
 // export default Navbar;
 
-
 import { useState } from "react";
+import "./Navbar.css";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -28,29 +28,21 @@ function Navbar() {
   return (
     <nav className="navbar">
       
-      {/* Logo */}
-      <h2 className="logo">Anjali.dev</h2>
+      <div className="logo">Anjali.dev</div>
 
-      {/* Toggle Button */}
-      <button 
-        className="menu-btn"
-        onClick={() => setMenuOpen(!menuOpen)}
-      >
-        {menuOpen ? "✖" : "☰"}
+      <button className="menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
+        ☰
       </button>
 
-      {/* Links */}
       <div className={`nav-links ${menuOpen ? "active" : ""}`}>
-        <a href="#home" onClick={() => setMenuOpen(false)}>🏠 Home</a>
-        <a href="#about" onClick={() => setMenuOpen(false)}>👩‍💻 About</a>
-        <a href="#experience" onClick={() => setMenuOpen(false)}>💼 Experience</a>
-        <a href="#projects" onClick={() => setMenuOpen(false)}>🚀 Projects</a>
-        <a href="#achievements" onClick={() => setMenuOpen(false)}>🏆 Achievements</a>
-        <a href="#github-stats" onClick={() => setMenuOpen(false)}>📊 GitHub</a>
-        <a href="/Anjali_Pekhale_Resume.pdf" target="_blank" rel="noopener noreferrer">
-          📄 Resume
-        </a>
-        <a href="#contact" onClick={() => setMenuOpen(false)}>📩 Contact</a>
+        <a href="#home">🏠 Home</a>
+        <a href="#about">👩‍💻 About</a>
+        <a href="#experience">💼 Experience</a>
+        <a href="#projects">🚀 Projects</a>
+        <a href="#achievements">🏆 Achievements</a>
+        <a href="#github-stats">📊 GitHub</a>
+        <a href="/Anjali_Pekhale_Resume.pdf" target="_blank" rel="noopener noreferrer">📄 Resume</a>
+        <a href="#contact">📬 Contact</a>
       </div>
 
     </nav>

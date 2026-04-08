@@ -390,7 +390,12 @@ img {
   /* MOBILE NAVBAR */
   @media (max-width: 768px) {
     .menu-btn {
-      display: block;
+      display: none;
+      font-size: 26px;
+      background: none;
+      border: none;
+      color: #38bdf8;
+      cursor: pointer;
     }
 
     .nav-links {
@@ -458,8 +463,24 @@ img {
 
   /* Mobile */
   @media (max-width: 768px) {
-    .projects {
-      grid-template-columns: 1fr;
+    .menu-btn {
+      display: block;
+    }
+
+    .nav-links {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      flex-direction: column;
+      background: #0f172a;
+
+      transform: translateY(-200%);
+      transition: 0.4s ease;
+    }
+
+    .nav-links.active {
+      transform: translateY(0);
     }
   }
 }
