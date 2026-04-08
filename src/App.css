@@ -1,5 +1,4 @@
-/* ==================== GLOBAL STYLES ==================== */
-* {
+==================== GLOBAL STYLES ==================== * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -336,10 +335,87 @@ img {
 
 /* ==================== RESPONSIVE DESIGN ==================== */
 @media (max-width: 768px) {
-  /* Navbar */
+  /* PREMIUM NAVBAR */
   .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 30px;
+
+    background: rgba(15, 23, 42, 0.7);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(56, 189, 248, 0.2);
+  }
+
+  /* LOGO */
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #38bdf8;
+  }
+
+  /* NAV LINKS */
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+
+  /* HOVER EFFECT */
+  .nav-links a {
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+
+  .nav-links a:hover {
+    background: rgba(56, 189, 248, 0.2);
+    transform: translateY(-2px);
+  }
+
+  /* TOGGLE BUTTON */
+  .menu-btn {
+    display: none;
+    font-size: 26px;
+    background: none;
+    border: none;
+    color: #38bdf8;
+    cursor: pointer;
+  }
+
+  /* MOBILE NAVBAR */
+  @media (max-width: 768px) {
+    .menu-btn {
+      display: block;
+    }
+
+    .nav-links {
+      position: absolute;
+      top: 70px;
+      left: 0;
+
+      width: 100%;
+      flex-direction: column;
+
+      background: rgba(15, 23, 42, 0.95);
+      backdrop-filter: blur(10px);
+
+      transform: translateY(-200%);
+      transition: all 0.4s ease;
+    }
+
+    .nav-links.active {
+      transform: translateY(0);
+    }
+
+    .nav-links a {
+      padding: 15px;
+      border-bottom: 1px solid rgba(56, 189, 248, 0.2);
+    }
   }
 
   /* Hero Section */
@@ -366,7 +442,21 @@ img {
     gap: 20px;
   }
 
-  /* Mobile view */
+  /* Desktop */
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  /* Tablet */
+  @media (max-width: 1024px) {
+    .projects {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  /* Mobile */
   @media (max-width: 768px) {
     .projects {
       grid-template-columns: 1fr;
