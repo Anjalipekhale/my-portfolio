@@ -329,40 +329,52 @@ textarea::placeholder {
     box-shadow: 0 0 40px rgba(56, 189, 248, 0.6);
   }
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 /* ==================== RESPONSIVE DESIGN ==================== */
 @media (max-width: 768px) {
-  h1 {
-    font-size: 2.5rem;
+  /* Navbar */
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  h2 {
-    font-size: 2rem;
-  }
-
-  section {
-    padding: 50px 30px;
-  }
-
-  nav {
+  /* Hero Section */
+  .hero {
     flex-direction: column;
-    gap: 10px !important;
-  }
-
-  nav a {
-    display: block;
     text-align: center;
   }
 
-  #home {
-    min-height: 80vh;
+  /* Profile Image */
+  .hero img {
+    width: 120px;
   }
 
-  #home h1 {
-    font-size: 2.5rem;
+  /* Buttons */
+  .btn {
+    width: 100%;
+    margin: 10px 0;
   }
 
-  #home p {
-    font-size: 1.1rem;
+  /* Projects Grid */
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
   }
+
+  /* Mobile view */
+  @media (max-width: 768px) {
+    .projects {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
 }
