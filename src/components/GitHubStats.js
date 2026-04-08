@@ -7,10 +7,15 @@ function GitHubStats() {
   ];
 
   const languages = [
-    { name: "JavaScript", percentage: 40, color: "#f7df1e" },
-    { name: "Python", percentage: 35, color: "#3776ab" },
-    { name: "React", percentage: 15, color: "#61dafb" },
-    { name: "CSS", percentage: 10, color: "#1572b6" }
+    { name: "JavaScript", percentage: 80, color: "#f7df1e" },
+    { name: "Python", percentage: 95, color: "#3776ab" },
+    { name: "React", percentage: 96, color: "#61dafb" },
+    { name: "Java", percentage: 80, color: "#7130a6" },
+    { name: "Django", percentage: 60, color: "#1572b6" },
+    { name: "Flask", percentage: 75, color: "#c93ddc" },
+    { name: "Springboot", percentage: 56, color: "#c23636" },
+    { name: "Tableau", percentage: 67, color: "#2b0a85" },
+    { name: "Data Analytics", percentage: 70, color: "#4191db" },
   ];
 
   return (
