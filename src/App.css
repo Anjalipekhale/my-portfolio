@@ -77,8 +77,6 @@ a {
 .nav-links a:hover {
   background: rgba(56, 189, 248, 0.2);
 }
-
-/* MENU BUTTON */
 .menu-btn {
   display: none;
   font-size: 24px;
@@ -86,14 +84,13 @@ a {
   border: none;
   color: #38bdf8;
   cursor: pointer;
+
+  padding: 0;
+  border-radius: 0;
 }
 
 /* ================= MOBILE ================= */
 @media (max-width: 768px) {
-  .menu-btn {
-    display: block;
-  }
-
   .nav-links {
     position: absolute;
     top: 60px;
@@ -179,10 +176,6 @@ img {
 
 /* ==================== MOBILE ==================== */
 @media (max-width: 768px) {
-  .menu-btn {
-    display: block;
-  }
-
   .nav-links {
     position: absolute;
     top: 70px;
