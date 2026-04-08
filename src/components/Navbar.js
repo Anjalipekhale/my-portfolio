@@ -9,13 +9,13 @@ function Navbar() {
       {/* Logo */}
       <div className="logo">Anjali.dev</div>
 
-      {/* Menu Button */}
+      {/* Menu Button
       <button 
         className="menu-btn"
         onClick={() => setMenuOpen(!menuOpen)}
       >
         ☰
-      </button>
+      </button> */}
 
       {/* Links */}
       <div className={`nav-links ${menuOpen ? "active" : ""}`}>
